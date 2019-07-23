@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MOM</title>
+</head>
+<body>
+  <script>
+
+
+function Mom (firstName, hairColor, eyeColor, lastName){
+    this.firstName = 'Alice';
+     this.lastName = 'Wong';
+     this.eyeColor = 'brown';
+     this.hairColor = 'black'; }
+    
+   function Kid (firstName, hairColor){
+     Mom.call(this, firstName, hairColor)
+   }
+    
+  const mom = new Mom()
+  Mom(mom)
+   const kid = new Kid()
+   kid.firstName = 'Ilene';
+   kid.hairColor = "brown";
+   console.log(mom)
+    
+ Kid(kid)
+ console.log(kid)
+    
+  </script>
+</body>
+</html>
